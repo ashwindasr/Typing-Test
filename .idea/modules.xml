@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../learn-react/.idea/learn-react.iml" filepath="$PROJECT_DIR$/../learn-react/.idea/learn-react.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/typing-speed-test.iml" filepath="$PROJECT_DIR$/.idea/typing-speed-test.iml" />
     </modules>
   </component>
