@@ -1,0 +1,15 @@
+.typing {
+    font-family: pt-mono,"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.row {
+    justify-content: center;
+}
+.myRow, .speed-div {
+    margin-top: 80px;
+}
+.align-content-center {
+    margin-top: 20px;
+}
