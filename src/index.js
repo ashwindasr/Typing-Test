@@ -7,7 +7,6 @@ import './index.css';
 
 function TypeText(props) {
     let text = props.text.split("");
-    let i = 0;
     let mapper = text.map((item, index) =>
         <div>
             <div className="typing" id={"typeText" + index}>{item}</div>
@@ -61,7 +60,7 @@ class Main extends React.Component {
         } else if (event.key === "CapsLock" || event.key === "Shift") {
             console.log("caps");
         } else if (event.key === "Backspace") {
-            if (this.state.myIndex == 0) {
+            if (this.state.myIndex === 0) {
                 return;
             }
 
@@ -70,7 +69,7 @@ class Main extends React.Component {
             });
             let temp = this.state.myIndex - 1;
             document.getElementById("typeText" + temp).style.color = "#000000";
-        } else if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122) || charCode == 46) {
+        } else if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122) || charCode === 46) {
             if (this.state.myIndex > this.state.totalIndex) {
                 return;
             }
