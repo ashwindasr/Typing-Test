@@ -7,9 +7,11 @@
 .row {
     justify-content: center;
 }
+
 .myRow, .speed-div {
     margin-top: 80px;
 }
+
 .align-content-center {
     margin-top: 20px;
 }

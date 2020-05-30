@@ -17,18 +17,17 @@ function TypeText(props) {
     );
 }
 
-
+const TEXT = "React is an open source JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single page or mobile applications.";
 class Main extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            myText: "React is an open source JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single page or mobile applications.",
+            myText: TEXT,
             myIndex: 0,
-            totalIndex: "React is an open source JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single page or mobile applications.".length - 1,
+            totalIndex: TEXT.length - 1,
             startTime: null,
-            words: 3,
-            letters: "React is an open source JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single page or mobile applications.".replace(" ", "").length,
+            letters: TEXT.replace(" ", "").length,
             incorrect: 0,
             totalTime: null,        // in minutes
         };
@@ -56,7 +55,7 @@ class Main extends React.Component {
             event.target.value = "";
 
             document.getElementById("speed").innerHTML = "Your speed: " + Math.round(this.state.myText.split(" ").length / this.totalTime) + " WPM";
-            document.getElementById("accuracy").innerHTML = "Your accuracy: " + Math.round(((this.state.letters - this.state.incorrect) / this.state.letters) * 100)
+            document.getElementById("accuracy").innerHTML = "Your accuracy: " + Math.round(((this.state.letters - this.state.incorrect) / this.state.letters) * 100) + " %";
         } else if (event.key === "CapsLock" || event.key === "Shift") {
             console.log("caps");
         } else if (event.key === "Backspace") {
@@ -74,7 +73,7 @@ class Main extends React.Component {
                 return;
             }
             if (this.state.myText[this.state.myIndex] === event.key) {
-                document.getElementById("typeText" + this.state.myIndex).style.color = "#03fc0b";
+                document.getElementById("typeText" + this.state.myIndex).style.color = "#00CC00";
                 this.setState({
                     myIndex: this.state.myIndex + 1,
                 });
