@@ -1,5 +1,5 @@
 # Typing-Test
-
+This project was done as part of [RookieHacks](https://rookiehacks.devpost.com/), hackathon conducted by [Major League Hacking](https://mlh.io/)
 ## Inspiration
 There are a lot of Typing Tests online. But almost all those website is filled with ads. Thats why we built this minimalistic website to check your typing speed.
 
@@ -24,5 +24,9 @@ We plan to improve the UI and add several other features as well, like login.
 - Reactstrap
 - NodeJS
 - MongoDB
-- G Suite
+- G Cloud
+
+## Team
+- [Sreenath BS](https://github.com/sreenathbs)
+- [Ashwin Das](https://github.com/ashwindasr)
 
