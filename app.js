@@ -35,7 +35,7 @@ require('./routes/paragraph')(app);
 
 
 // mongodb
-const db_url = "mongodb+srv://sreenathbs:sreenathbs@cluster0-ujqfd.gcp.mongodb.net/test?retryWrites=true&w=majority";
+const db_url = "";
 mongoose.connect(db_url, {useNewUrlParser: true, useUnifiedTopology: true});
 
 var db = mongoose.connection;
