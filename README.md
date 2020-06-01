@@ -1,5 +1,9 @@
 # Typing-Test
 This project was done as part of [RookieHacks](https://rookiehacks.devpost.com/), a hackathon conducted by [Major League Hacking](https://mlh.io/)
+
+[img1](https://github.com/ashwindasr/Typing-Test/blob/master/assets/images/img1.png)
+[img2](https://github.com/ashwindasr/Typing-Test/blob/master/assets/images/img2.png)
+
 ## Inspiration
 There are a lot of Typing Tests online. But almost all those website is filled with ads. Thats why we built this minimalistic website to check your typing speed.
 
